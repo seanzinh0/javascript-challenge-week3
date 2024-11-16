@@ -58,6 +58,7 @@ console.log(c2.listLanguages());
 console.log(c3.listLanguages());
 c3.completeTask();
 c3.offerNewTask();
+c3.acceptNewTask();
 console.log(person1);
 console.log(c1);
 console.log(c2);
