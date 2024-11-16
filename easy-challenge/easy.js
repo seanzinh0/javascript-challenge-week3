@@ -1,9 +1,17 @@
-let exercises = ["Running", "Swimming", "Dancing", "Fencing"];
-
-function displayExercises(exercises) {
-    for (let exercise of exercises) {
-        console.log("Today's exercise: ", exercise);
+function exercise(exercises) {
+    return function(){
+        console.log("Today's exercise: " +  exercises);
     }
 }
 
-displayExercises(exercises);
+const running = exercise("Running");
+running();
+
+const swimming = exercise("Swimming");
+swimming();
+
+const dancing = exercise("Dancing");
+dancing();
+
+const fencing = exercise("Fencing");
+fencing();
