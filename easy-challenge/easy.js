@@ -1,17 +1,15 @@
-function exercise(exercises) {
-    return function(){
-        console.log("Today's exercise: " +  exercises);
+function exercise() {
+    return function(exerciseName){
+        return "Today's exercise: " +  exerciseName;
     }
 }
 
-const running = exercise("Running");
-running();
+let displayExercise = exercise();
 
-const swimming = exercise("Swimming");
-swimming();
+console.log(displayExercise("Running"));
+console.log(displayExercise("Swimming"));
+console.log(displayExercise("Dancing"));
+console.log(displayExercise("Fencing"));
 
-const dancing = exercise("Dancing");
-dancing();
-
-const fencing = exercise("Fencing");
-fencing();
+console.log(exercise()("Jiu-Jitsu"));
+console.log(exercise()("Muay Thai"));
