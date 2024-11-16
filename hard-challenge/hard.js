@@ -1,17 +1,17 @@
 function createPII(name, ssn) {
-    let privateName = name;
-    let privateSSN = ssn;
-
     const PII= {
-        getName: function() {
-            return privateName;
-        },
-        getSSN: function() {
-            return "NO ACCESS";
-        }
+        name: name,
+        ssn: ssn
     };
 
-    return PII;
+   return {
+       getName: function () {
+           return PII.name;
+       },
+       getSSN: function () {
+           return "NO ACCESS";
+       }
+   }
 }
 
 const user = createPII("sean", "222-22-2222");
