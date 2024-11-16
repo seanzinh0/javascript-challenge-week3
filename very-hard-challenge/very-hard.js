@@ -42,10 +42,7 @@ class Programmer extends Person {
     }
 
     listLanguages() {
-        for(let language of this.languages){
-            console.log(language);
-        }
-        return this.languages;
+        return this.languages.join(", ");
 }
 }
 
